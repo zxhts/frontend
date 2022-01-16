@@ -14,6 +14,8 @@ module.exports = {
     'js/app': './src/app.js'
   },
 
+  target: 'web',
+
   // 配置出口
   output: {
     path: path.join(__dirname, './dist'),
@@ -81,17 +83,5 @@ module.exports = {
     contentBase: path.join(__dirname, './dist'),
     compress: true,
     port: 9000,
-    // proxy: {
-    //   "/api": {
-    //     target: 'http://localhost:3000'
-    //   },
-    //   // "/socket": {
-    //   //   target: 'http://localhost:3000',
-    //   //   changeOrigin: true,
-    //   //   pathRewrite: {
-    //   //     '^/socket': ''
-    //   //   }
-    //   // }
-    // }
   }
 }
